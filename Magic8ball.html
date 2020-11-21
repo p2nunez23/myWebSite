@@ -1,0 +1,99 @@
+
+<html>
+<head>
+<script language = Javascript
+
+
+"Of course", "Never", "the future is cloudy", "Perhaps", "Without a doubt"];
+
+function random()
+{
+var rand = -1;// local variable
+var userQ = document.getElementById("question");
+var myAnswer = document.getElementById("answer");
+
+
+// Math.random return a random decimal between 0 (inclusive) and 1 (exclusive)
+// To generate a random number, multiply Math.random() times the number of 
+// options that we want. --> 0 and 1 less than the number of options
+
+rand = Math.random()*answers.length; // 0-10
+rand = Math.floor(rand); // returns the nearest integer that is LESS than the parameter
+
+
+//alert(userQ.value.length);
+rand = 9;
+
+if(UserQ.value.length == 0 ) // nothing is in question textbox
+{
+myAnswer.value = "Please type a question first.";
+}
+else
+{
+myAnswer.value = answer[rand];
+}
+
+}
+
+function reset()
+
+
+function reset()
+{
+//delete tge contents of the answer textbox.
+document.geElementById("answer").value = "";
+
+
+
+
+
+
+
+//alert(answers.length);
+
+var userQ = document.getElemntById("question")
+var qText = userQ.value
+var indexOfLast = qText.length
+
+
+
+
+
+
+<body>
+<center>
+<h1>Magic 8-Ball</h1>
+
+<img src="images/soothsayer.jpg"/><br/><br/><br/>
+
+<input id = "question" type = "text" size="80" onfocusin /><br/><br/><br/>
+<input id = "button" value="Click here" onClick="random()" /><br/><br/>
+<input id="answer" type = "text" size"80" readonly = true /><br/>
+
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
